@@ -1,9 +1,6 @@
 import cv2
-
 video=cv2.VideoCapture('carVideo.mp4')
-
 carCaseCade=cv2.CascadeClassifier('cars.xml')
-
 while True:
 	src,frame=video.read()
 	gray=cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
